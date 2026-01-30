@@ -16,6 +16,13 @@ document.querySelector(".save").onclick = function() {
 // LOAD
 document.querySelector(".load").onclick = function() {
 
+  key = document.querySelector("#loadKey").value;
+
+ 
+  var value = localStorage.getItem(key);
+
+  
+  document.querySelector("#loadValue").value = value;
 };
 
 // LOAD
